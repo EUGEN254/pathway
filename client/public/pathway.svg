@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <!-- Sun -->
+  <circle cx="46" cy="14" r="5" stroke="red" stroke-width="2"></circle>
+
+  <!-- Location pin -->
+  <path d="M32 6C22.6 6 15 13.6 15 23c0 12.8 17 35 17 35s17-22.2 17-35C49 13.6 41.4 6 32 6z" stroke="red" stroke-width="2" fill="none"></path>
+
+  <!-- Inner circle of pin -->
+  <circle cx="32" cy="23" r="5" stroke="red" stroke-width="2"></circle>
+
+  <!-- Suitcase -->
+  <rect x="22" y="38" width="20" height="14" rx="2" stroke="red" stroke-width="2"></rect>
+  <path d="M28 38v-4h8v4" stroke="red" stroke-width="2"></path>
+</svg>
