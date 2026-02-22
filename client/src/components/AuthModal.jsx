@@ -114,12 +114,12 @@ const AuthModal = ({ isOpen, onClose, defaultMode = "login" }) => {
                 </span>
               </div>
             ) : (
-              <div className="w-full">
+              <div className="google-login-button-wrapper w-full">
                 <GoogleLogin
                   onSuccess={handleGoogleSuccess}
                   shape="rectangular"
                   size="large"
-                  width="100%"
+                  width="400" // Try using a numeric pixel value instead of percentage
                   theme="outline"
                   text={isLogin ? "signin_with" : "signup_with"}
                   logo_alignment="center"

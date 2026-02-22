@@ -48,3 +48,16 @@ body {
 ::-webkit-scrollbar-corner {
   background: #f8ebd4;
 }
+
+
+.google-login-button-wrapper {
+  width: 100% !important;
+}
+
+.google-login-button-wrapper > div {
+  width: 100% !important;
+}
+
+.google-login-button-wrapper iframe {
+  width: 100% !important;
+}
