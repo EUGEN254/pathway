@@ -114,15 +114,17 @@ const AuthModal = ({ isOpen, onClose, defaultMode = "login" }) => {
                 </span>
               </div>
             ) : (
-              <GoogleLogin
-                onSuccess={handleGoogleSuccess}
-                shape="rectangular"
-                size="large"
-                width="100%"
-                theme="outline"
-                text={isLogin ? "signin_with" : "signup_with"}
-                logo_alignment="center"
-              />
+              <div className="w-full">
+                <GoogleLogin
+                  onSuccess={handleGoogleSuccess}
+                  shape="rectangular"
+                  size="large"
+                  width="100%"
+                  theme="outline"
+                  text={isLogin ? "signin_with" : "signup_with"}
+                  logo_alignment="center"
+                />
+              </div>
             )}
           </div>
 
