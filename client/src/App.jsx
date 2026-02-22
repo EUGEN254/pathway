@@ -1,7 +1,6 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
-import { Toaster } from "sonner";
 import Details from "./pages/Details";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -17,11 +16,16 @@ import Careers from "./pages/Careers";
 import Press from "./pages/Press";
 import AboutUs from "./pages/AboutUs";
 import Destinations from "./pages/Destinations";
+import { Toaster } from "./components/Sonner";
+import ForgotPassword from "./pages/ForgotPassword";
 
 const App = () => {
+  const location = useLocation();
+  const isResetPassword = location.pathname.includes("/forgot-password");
+
   return (
     <>
-      <Navbar />
+      {!isResetPassword && <Navbar />}
       <Toaster />
       <ScrollToTop />
       <Routes>
@@ -35,13 +39,13 @@ const App = () => {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfUse />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
 
         <Route path="/destinations" element={<Destinations />} />
       </Routes>
       <ScrollToTopButton />
       <Chatbot />
-
-      <Footer />
+      {!isResetPassword && <Footer />}
     </>
   );
 };
