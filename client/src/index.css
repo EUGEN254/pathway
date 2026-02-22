@@ -51,13 +51,13 @@ body {
 
 
 .google-login-button-wrapper {
-  width: 80% !important;
+  width: 90% !important;
 }
 
 .google-login-button-wrapper > div {
-  width:  80%  !important;
+  width:  90%  !important;
 }
 
 .google-login-button-wrapper iframe {
-  width: 80% !important;
+  width: 90% !important;
 }
